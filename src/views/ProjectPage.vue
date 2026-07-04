@@ -201,10 +201,10 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import UploadFlowStep from '../components/project/UploadFlowStep.vue'
-import RecommendedEventsStep from '../components/project/RecommendedEventsStep.vue'
-import UploadEventsStep from '../components/project/UploadEventsStep.vue'
-import RecommendationsStep from '../components/project/RecommendationsStep.vue'
+import UploadFlowStep from '../components/UploadFlowStep.vue'
+import RecommendedEventsStep from '../components/RecommendedEventsStep.vue'
+import UploadEventsStep from '../components/UploadEventsStep.vue'
+import RecommendationsStep from '../components/RecommendationsStep.vue'
 import type { Screen, AnalysisResult, PastAnalysis, MatchResult, GpuStats, RecommendationsResult } from '../types/project'
 
 const route = useRoute()

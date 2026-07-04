@@ -189,7 +189,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import type { Screen, AnalysisResult, AnalysisEvent } from '../../types/project'
+import type { Screen, AnalysisResult, AnalysisEvent } from '../types/project'
 
 const props = defineProps<{
   screens: Screen[]

@@ -228,7 +228,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import * as XLSX from 'xlsx'
-import type { AnalysisResult, MatchResult, GpuStats } from '../../types/project'
+import type { AnalysisResult, MatchResult, GpuStats } from '../types/project'
 
 const props = defineProps<{
   analysisResult: AnalysisResult | null

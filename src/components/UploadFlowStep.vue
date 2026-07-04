@@ -220,7 +220,7 @@
 
 <script setup lang="ts">
 import { ref, nextTick } from 'vue'
-import type { Screen, AnalysisResult, PastAnalysis } from '../../types/project'
+import type { Screen, AnalysisResult, PastAnalysis } from '../types/project'
 
 const props = defineProps<{
   screens: Screen[]

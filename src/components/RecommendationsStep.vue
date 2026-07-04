@@ -166,7 +166,7 @@
 
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
-import type { RecommendationsResult, MatchResult } from '../../types/project'
+import type { RecommendationsResult, MatchResult } from '../types/project'
 
 defineProps<{
   recommendationsResult: RecommendationsResult | null
