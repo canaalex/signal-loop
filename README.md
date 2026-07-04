@@ -46,13 +46,13 @@ Upload your existing events from **GA4, Mixpanel, or Amplitude** and get a GPU-a
 
 ## Features
 
-- **AI Screen Analysis** — Gemini reads your product screenshots and identifies every trackable user action
-- **Event Recommendations** — Event names, properties, priority levels, and descriptions ready for engineering handoff
-- **Coverage Gap Analysis** — Compare AI recommendations against your existing analytics events to find what's missing
-- **GPU Acceleration** — NVIDIA cuDF (RAPIDS) processes large event datasets up to 10× faster than CPU
-- **Behavioral Insights** — Friction points, behavior patterns, and prioritized next steps for product managers
-- **Multi-platform Support** — Works with GA4, Mixpanel, Amplitude, or any CSV/Excel/JSON export
-- **Download & Share** — Export your event list as JSON or CSV to share with your engineering team
+- **AI Screen Analysis** Gemini reads your product screenshots and identifies every trackable user action
+- **Event Recommendations** Event names, properties, priority levels, and descriptions ready for engineering handoff
+- **Coverage Gap Analysis** Compare AI recommendations against your existing analytics events to find what's missing
+- **GPU Acceleration** NVIDIA cuDF (RAPIDS) processes large event datasets up to 10× faster than CPU
+- **Behavioral Insights** Friction points, behavior patterns, and prioritized next steps for product managers
+- **Multi-platform Support** Works with GA4, Mixpanel, Amplitude, or any CSV/Excel/JSON export
+- **Download & Share** Export your event list as JSON or CSV to share with your engineering team
 
 ---
 
