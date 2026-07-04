@@ -1,6 +1,6 @@
 # SignalLoop
 
-> AI-powered behavioral analytics — know what your users do, and what you're missing.
+> AI-powered behavioral analytics: know what your users do, and what you're missing.
 
 [![Built with Gemini](https://img.shields.io/badge/Built%20with-Gemini%20AI-4285F4?style=flat-square&logo=google)](https://deepmind.google/technologies/gemini/)
 [![Powered by NVIDIA](https://img.shields.io/badge/GPU-NVIDIA%20L4-76B900?style=flat-square&logo=nvidia)](https://www.nvidia.com/)
@@ -74,7 +74,7 @@ Upload your existing events from **GA4, Mixpanel, or Amplitude** and get a GPU-a
 1. Go to the **[live demo](https://signalloop-1076153819107.asia-southeast1.run.app)** and create a project
 2. Upload **3–5 screenshots** of any mobile or web app (your own product, or any app you use)
 3. Name each screen (e.g. "Home", "Product Listing", "Checkout")
-4. Click **Analyze Product Flow** — Gemini will generate recommended events in ~30 seconds
+4. Click **Analyze Product Flow**: Gemini will generate recommended events in ~30 seconds
 5. Download the [sample GA4 events file](https://signalloop-1076153819107.asia-southeast1.run.app/sample-ga4-events.csv) and upload it on step 3 to see the coverage gap analysis
 6. Go to step 4 to see behavioral insights and friction points
 
@@ -91,10 +91,10 @@ Upload Screens → Gemini AI Analysis → Recommended Events → Coverage Check 
                   & user flows          + properties        gap matching
 ```
 
-1. **Upload Flow** — Drop in screenshots of any product screen or user journey
-2. **Recommended Events** — Gemini analyzes every screen and generates a full event taxonomy
-3. **Upload Events** — Upload your existing analytics export; NVIDIA cuDF matches it against recommendations
-4. **Recommendations** — Behavioral insights, friction points, and next steps your PM team can act on today
+1. **Upload Flow**: Drop in screenshots of any product screen or user journey
+2. **Recommended Events**: Gemini analyzes every screen and generates a full event taxonomy
+3. **Upload Events**: Upload your existing analytics export; NVIDIA cuDF matches it against recommendations
+4. **Recommendations**: Behavioral insights, friction points, and next steps your PM team can act on today
 
 ---
 
@@ -114,13 +114,13 @@ Upload Screens → Gemini AI Analysis → Recommended Events → Coverage Check 
 SignalLoop uses Gemini 2.5 Flash (with 1.5 Flash as fallback) for three core tasks: reading product screenshots to identify every user interaction and recommend analytics events with names, properties, and priority; matching uploaded analytics events against recommendations using AI similarity to determine coverage; and generating behavioral insights, friction points, and actionable next steps for product managers.
 
 **Google BigQuery**
-All project data is stored in BigQuery — projects, past analyses, recommended events, and coverage results. This makes every analysis queryable and persistent across sessions, and gives the platform a foundation for future analytics on top of the data itself.
+All project data is stored in BigQuery: projects, past analyses, recommended events, and coverage results. This makes every analysis queryable and persistent across sessions, and gives the platform a foundation for future analytics on top of the data itself.
 
 **Google Cloud Storage**
 Every screenshot uploaded by the user is stored in Cloud Storage and referenced by URL when sent to Gemini for analysis. This keeps the API payloads efficient and makes screenshots retrievable for display in the UI without re-uploading.
 
 **NVIDIA RAPIDS cuDF / cudf.pandas**
-When users upload their existing analytics events export, SignalLoop runs a dedicated GPU service using `cudf.pandas` — a drop-in replacement for pandas that runs on NVIDIA GPU. This processes large event datasets up to 10x faster than CPU, enabling instant frequency analysis and event matching at scale. The service runs on a dedicated Cloud Run instance with an NVIDIA L4 GPU.
+When users upload their existing analytics events export, SignalLoop runs a dedicated GPU service using `cudf.pandas`: a drop-in replacement for pandas that runs on NVIDIA GPU. This processes large event datasets up to 10x faster than CPU, enabling instant frequency analysis and event matching at scale. The service runs on a dedicated Cloud Run instance with an NVIDIA L4 GPU.
 
 ---
 
@@ -195,8 +195,8 @@ gcloud run deploy signalloop-gpu \
 
 - Analysis works best with **3–10 screens** from a single user flow
 - The GPU service has a **~30 second cold start** if it hasn't been used recently
-- Screenshot analysis is optimized for **mobile and web UI** — it works less well on charts, dashboards, or non-UI images
-- Coverage matching uses AI similarity, not exact string matching — results may vary for unusual event naming conventions
+- Screenshot analysis is optimized for **mobile and web UI**: it works less well on charts, dashboards, or non-UI images
+- Coverage matching uses AI similarity, not exact string matching: results may vary for unusual event naming conventions
 
 ---
 
