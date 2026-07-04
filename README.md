@@ -104,9 +104,10 @@ Upload Screens → Gemini AI Analysis → Recommended Events → Coverage Check 
 |---|---|
 | Frontend | Vue 3, TypeScript, Vite, Tailwind CSS v4 |
 | Backend | Node.js, Express, TypeScript |
-| AI | Google Gemini (Vertex AI Agent Platform) |
-| GPU | NVIDIA cuDF (RAPIDS) on Cloud Run L4 GPU |
-| Storage | Google Cloud Storage, BigQuery |
+| AI | Gemini Enterprise Agent Platform (Gemini 2.5 Flash) |
+| GPU | NVIDIA RAPIDS cuDF / cudf.pandas on NVIDIA L4 GPU |
+| Database | Google BigQuery |
+| Storage | Google Cloud Storage |
 | Infrastructure | Google Cloud Run |
 
 ---
