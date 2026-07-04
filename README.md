@@ -16,29 +16,42 @@
 ## Screenshots
 
 **Home**
+
 ![SignalLoop Home](docs/screenshots/home.png)
 
+<br/>
+
 **Upload your product screens**
+
 ![Upload Flow](docs/screenshots/upload-screenshots.png)
 
-**AI-recommended events with properties and priority**
+<br/>
+
+**AI recommended events with properties and priority**
+
 ![Recommended Events](docs/screenshots/events.png)
 
+<br/>
+
 **Event coverage gap analysis**
+
 ![Coverage Analysis](docs/screenshots/upload-events.png)
 
+<br/>
+
 **Behavioral insights and next steps**
+
 ![Recommendations](docs/screenshots/recommendations.png)
 
 ---
 
 ## The Problem
 
-Most product teams collect analytics data but never know what they're *missing*. Which user actions go untracked? Which flows have blind spots? Where are the real drop-offs? Without the right events in place, you can't answer these questions — and no one has time to manually audit every screen.
+Most product teams collect analytics data but never know what they're *missing*. Which user actions go untracked? Which flows have blind spots? Where are the real drop-offs? Without the right events in place, you can't answer these questions and no one has time to manually audit every screen.
 
 ## What SignalLoop Does
 
-SignalLoop takes screenshots of any product flow and uses **Gemini AI** to read every screen — the buttons, labels, interactions, and user journey — then tells you exactly which analytics events you should be tracking, what properties to capture, and what your current implementation is missing.
+SignalLoop takes screenshots of any product flow and uses **Gemini AI** to read every screen, the buttons, labels, interactions, and user journey, then tells you exactly which analytics events you should be tracking, what properties to capture, and what your current implementation is missing.
 
 Upload your existing events from **GA4, Mixpanel, or Amplitude** and get a GPU-accelerated coverage gap analysis in milliseconds. Product managers get behavioral insights they can act on. Engineers get a ready-to-implement event list with zero ambiguity.
 
