@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "./theme.css";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #0A0D18;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom utilities — used where Tailwind arbitrary values would be too verbose */
+.gradient-pink {
+  background: linear-gradient(135deg, #FF2E83 0%, #E94E9D 100%);
+}
+
+.glow-pink-sm {
+  box-shadow: 0 0 22px rgba(255, 46, 131, 0.35), 0 2px 8px rgba(255, 46, 131, 0.2);
+}
+
+.glow-pink-md {
+  box-shadow: 0 0 28px rgba(255, 46, 131, 0.35), 0 4px 14px rgba(255, 46, 131, 0.2);
+}
+
+.glow-pink-lg {
+  box-shadow: 0 0 32px rgba(255, 46, 131, 0.4), 0 4px 16px rgba(255, 46, 131, 0.25);
+}

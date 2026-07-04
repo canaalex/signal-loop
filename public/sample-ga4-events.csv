@@ -1,0 +1,23 @@
+# Google Analytics 4
+# Property: Sample Store
+# Date range: Last 30 days
+
+Event name,Event count,Total users,Events per session
+page_view,45234,12890,3.51
+session_start,12890,12890,1.00
+first_visit,3421,3421,1.00
+user_engagement,34567,12890,2.68
+scroll,28903,10234,2.82
+click,15678,8901,1.76
+view_item,8901,5678,1.57
+add_to_cart,5678,3456,1.64
+remove_from_cart,1234,987,1.25
+begin_checkout,2341,1876,1.25
+add_payment_info,1987,1654,1.20
+add_shipping_info,2100,1780,1.18
+purchase,891,847,1.05
+refund,123,118,1.04
+search,4567,3210,1.42
+login,3456,3200,1.08
+sign_up,1234,1234,1.00
+share,456,398,1.15

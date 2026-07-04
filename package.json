@@ -1,0 +1,39 @@
+{
+  "name": "signalloop",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"cd gpu_service && venv/bin/uvicorn main:app --port 8001\"",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "start": "tsx server.ts",
+    "server": "tsx server.ts",
+    "server:dev": "tsx watch server.ts"
+  },
+  "dependencies": {
+    "@google-cloud/bigquery": "^8.3.1",
+    "@google-cloud/storage": "^7.21.0",
+    "@google/genai": "^2.9.0",
+    "@tailwindcss/vite": "^4.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "http-proxy-middleware": "^3.0.7",
+    "tailwindcss": "^4.3.0",
+    "tsx": "^4.19.2",
+    "vue": "^3.5.34",
+    "vue-router": "^4.6.4",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^24.12.3",
+    "@vitejs/plugin-vue": "^6.0.6",
+    "@vue/tsconfig": "^0.9.1",
+    "concurrently": "^10.0.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12",
+    "vue-tsc": "^3.2.8"
+  }
+}

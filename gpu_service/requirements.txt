@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pandas
+openpyxl
+python-multipart
+
+# cuDF install (requires NVIDIA GPU + CUDA):
+# pip install cudf-cu12 --extra-index-url=https://pypi.nvidia.com
+# OR via conda: conda install -c rapidsai -c conda-forge cudf
