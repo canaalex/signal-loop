@@ -110,6 +110,18 @@ Upload Screens → Gemini AI Analysis → Recommended Events → Coverage Check 
 | Storage | Google Cloud Storage |
 | Infrastructure | Google Cloud Run |
 
+**Gemini Enterprise Agent Platform**
+SignalLoop uses Gemini 2.5 Flash (with 1.5 Flash as fallback) for three core tasks: reading product screenshots to identify every user interaction and recommend analytics events with names, properties, and priority; matching uploaded analytics events against recommendations using AI similarity to determine coverage; and generating behavioral insights, friction points, and actionable next steps for product managers.
+
+**Google BigQuery**
+All project data is stored in BigQuery — projects, past analyses, recommended events, and coverage results. This makes every analysis queryable and persistent across sessions, and gives the platform a foundation for future analytics on top of the data itself.
+
+**Google Cloud Storage**
+Every screenshot uploaded by the user is stored in Cloud Storage and referenced by URL when sent to Gemini for analysis. This keeps the API payloads efficient and makes screenshots retrievable for display in the UI without re-uploading.
+
+**NVIDIA RAPIDS cuDF / cudf.pandas**
+When users upload their existing analytics events export, SignalLoop runs a dedicated GPU service using `cudf.pandas` — a drop-in replacement for pandas that runs on NVIDIA GPU. This processes large event datasets up to 10x faster than CPU, enabling instant frequency analysis and event matching at scale. The service runs on a dedicated Cloud Run instance with an NVIDIA L4 GPU.
+
 ---
 
 ## Getting Started
